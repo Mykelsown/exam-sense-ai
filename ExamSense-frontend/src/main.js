@@ -125,3 +125,35 @@ if (fileRemoveBtn) {
 
 // Show home page by default
 showPage("home");
+
+// Theme toggle
+const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+function setTheme(theme) {
+  if (theme === "dark") {
+    body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+  } else {
+    body.classList.remove("dark-mode");
+    themeToggle.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  }
+}
+
+themeToggle.addEventListener("click", () => {
+  if (body.classList.contains("dark-mode")) {
+    setTheme("light");
+  } else {
+    setTheme("dark");
+  }
+});
+
+// Load theme on page load
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  setTheme(savedTheme);
+} else {
+  setTheme("light");
+}
