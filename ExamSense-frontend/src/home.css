@@ -549,7 +549,7 @@ article p,
 .steps-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   width: 100%;
   margin: 0 auto;
 }
@@ -562,7 +562,7 @@ article p,
 
 .step-card {
   width: 280px;
-  height: 220px;
+  height: 280px;
   border-radius: 15px 0 0 15px;
   display: flex;
   flex-direction: column;
@@ -609,7 +609,8 @@ article p,
   flex: 1;
   align-items: flex-start;
   flex-wrap: wrap;
-  height: 220px;
+  height: 280px;
+  justify-content: flex-start;
 }
 
 .step-description h3 {
