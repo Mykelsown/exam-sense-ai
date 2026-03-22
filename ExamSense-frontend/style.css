@@ -44,6 +44,7 @@ nav {
 
 nav p {
   color: rgb(109, 109, 109);
+  cursor: pointer;
 }
 
 nav p:hover {
