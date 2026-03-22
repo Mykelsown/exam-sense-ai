@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 27px 0px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header-content-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.35rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-title > div {
+  background-color: #4f39f6;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.project-title svg {
+  width: 25px;
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+nav p {
+  color: rgb(109, 109, 109);
+}
+
+nav p:hover {
+  color: rgb(63, 63, 63);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+#home,
+#generate,
+#upload,
+#about {
+  margin: 100px 0px 30px 0px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Upload Drop Zone Styling */
+.upload-drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  margin: 30px 0;
+}
+
+.upload-zone-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.upload-icon-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4f39f6;
+}
+
+.upload-icon-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+.upload-zone-content h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0;
+}
+
+.upload-zone-content > p:not(.supported-formats) {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.upload-btn {
+  background-color: #4f39f6;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.upload-btn:hover {
+  background-color: #3f2fd1;
+}
+
+.upload-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.supported-formats {
+  color: #888;
+  font-size: 0.85rem;
+  margin-top: 10px !important;
+}
+
+/* Selected File Info Styling */
+.selected-file-info {
+  border: 2px solid #e8f5e9;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #f1f8f4;
+  margin: 30px 0;
+}
+
+.file-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.file-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c8e6c9;
+  border-radius: 8px;
+  color: #2e7d32;
+  flex-shrink: 0;
+}
+
+.file-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.file-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.file-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.file-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.file-remove-btn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.file-remove-btn:hover {
+  background-color: #ffebee;
+}

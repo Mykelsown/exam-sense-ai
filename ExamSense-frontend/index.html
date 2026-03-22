@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content-container">
+        <div class="project-title">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-graduation-cap w-6 h-6 text-white"
+              data-fg-55i5="1.60:2.1677:/components/Navbar.tsx:15:15:561:48:e:GraduationCap::::::CR9S"
+            >
+              <path
+                d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+              ></path>
+              <path d="M22 10v6"></path>
+              <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+            </svg>
+          </div>
+          ExamSense AI
+        </div>
+        <nav>
+          <p data-route="home">Home</p>
+          <p data-route="generate">Generate</p>
+          <p data-route="upload">Upload</p>
+          <p data-route="about">About</p>
+        </nav>
+      </div>
+    </header>
+    <div id="home">
+      <main>
+        <div class="hero-section">
+          <div class="landing-side-1">
+            <div class="AI-label">
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles w-8 h-8 text-purple-600"
+                  data-fg-ctt631="1.65:2.3287:/components/LandingPage.tsx:60:21:2830:48:e:Sparkles::::::DD2N"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path></svg></span
+              >AI-Powered Learning Assistant
+            </div>
+            <div class="landing-text-1">
+              Turn Lectures into Exam-Ready Questions with AI
+            </div>
+            <div class="landing-text-2">
+              Upload your lecture audio or paste transcripts, and let our
+              advanced AI generate comprehensive exam questions tailored to your
+              study materials. Study smarter, not harder.
+            </div>
+            <div class="landing-btns">
+              <button class="landing-btn-1">
+                <span>Generate Questions</span>
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right w-5 h-5"
+                    data-fg-ctt615="1.65:2.3287:/components/LandingPage.tsx:33:17:1523:34:e:ArrowRight::::::s5N"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path></svg
+                ></span>
+              </button>
+              <button class="landing-btn-2">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mic w-5 h-5"
+                    data-fg-ctt617="1.65:2.3287:/components/LandingPage.tsx:40:17:1881:27:e:Mic::::::ELnR"
+                  >
+                    <path
+                      d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"
+                    ></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                    <line x1="12" x2="12" y1="19" y2="22"></line></svg></span
+                >Upload Lecture Audio
+              </button>
+            </div>
+          </div>
+
+          <div class="landing-side-2">
+            <div class="top-abs">Fast & Accurate</div>
+            <div class="workflow-imgs">
+              <div class="mic-img-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mic"
+                  data-fg-ctt625="1.65:2.3287:/components/LandingPage.tsx:52:21:2387:43:e:Mic::::::ELnR"
+                >
+                  <path
+                    d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"
+                  ></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" x2="12" y1="19" y2="22"></line>
+                </svg>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                data-fg-ctt626="1.65:2.3287:/components/LandingPage.tsx:54:19:2474:48:e:ArrowRight::::::s5N"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+              <div class="file-img-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text"
+                  data-fg-ctt628="1.65:2.3287:/components/LandingPage.tsx:56:21:2606:46:e:FileText::::::B1i5"
+                >
+                  <path
+                    d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                  ></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+                </svg>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-right"
+                data-fg-ctt626="1.65:2.3287:/components/LandingPage.tsx:54:19:2474:48:e:ArrowRight::::::s5N"
+              >
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+              <div class="sparkles-img-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles"
+                  data-fg-ctt631="1.65:2.3287:/components/LandingPage.tsx:60:21:2830:48:e:Sparkles::::::DD2N"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="bars">
+              <div class="bar-cont-1">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+              </div>
+              <div class="bar-cont-2">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+              </div>
+              <div class="bar-cont-3 bar-cont-active">
+                <div class="bar-1"></div>
+                <div class="bar-2"></div>
+              </div>
+            </div>
+            <div class="lower-abs">Study Efficiently</div>
+          </div>
+        </div>
+
+        <div class="home-page-section-divider"></div>
+
+        <article>
+          <h2>Why Students Choose ExamSense AI</h2>
+          <p>Intelligent question generation designed for academic success</p>
+          <div class="article-classification">
+            <div class="classification-1">
+              <div class="classification-img-container sparkle-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles"
+                  data-fg-ctt657="1.65:2.3287:/components/LandingPage.tsx:102:15:4868:48:e:Sparkles::::::DD2N"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path>
+                </svg>
+              </div>
+              <h3>AI-Powered Analysis</h3>
+              <p>
+                Advanced natural language processing understands lecture content
+                and generates relevant, challenging exam questions
+                automatically.
+              </p>
+            </div>
+            <div class="classification-1">
+              <div class="classification-img-container file-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-file-text w-6 h-6 text-teal-600"
+                  data-fg-ctt664="1.65:2.3287:/components/LandingPage.tsx:113:15:5477:46:e:FileText::::::B1i5"
+                >
+                  <path
+                    d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                  ></path>
+                  <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                  <path d="M10 9H8"></path>
+                  <path d="M16 13H8"></path>
+                  <path d="M16 17H8"></path>
+                </svg>
+              </div>
+              <h3>Multiple Formats</h3>
+              <p>
+                Generate essay questions, multiple choice, or short answer
+                questions based on your preferred exam format and study style.
+              </p>
+            </div>
+            <div class="classification-1">
+              <div class="classification-img-container mic-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mic w-6 h-6 text-purple-600"
+                  data-fg-ctt671="1.65:2.3287:/components/LandingPage.tsx:124:15:6074:43:e:Mic::::::ELnR"
+                >
+                  <path
+                    d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"
+                  ></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" x2="12" y1="19" y2="22"></line>
+                </svg>
+              </div>
+              <h3>Audio to Questions</h3>
+              <p>
+                Upload lecture recordings directly. Our AI transcribes and
+                analyzes audio to create comprehensive study questions
+                instantly.
+              </p>
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+    <div id="generate">
+      <main>
+        <div class="content-container">
+          <h1>Generate Exam Questions</h1>
+          <p>
+            Paste your lecture transcript or study materials below, and our AI
+            will generate relevant exam questions.
+          </p>
+          <div class="inputs-box-container">
+            <div class="input-box input-box-1">
+              <div class="box-texts-n-img">
+                <div class="input-img-cont-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-text"
+                    data-fg-ed2d11="2.7:2.6155:/components/GenerateQuestionsPage.tsx:39:15:1426:48:e:FileText::::::B1i5"
+                  >
+                    <path
+                      d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                    ></path>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h2>Lecture Transcript</h2>
+                  <p>Paste your lecture transcript or notes</p>
+                </div>
+              </div>
+              <textarea
+                name=""
+                id=""
+                placeholder="Example: Today we're discussing cellular respiration. The process begins with glycolysis in the cytoplasm, where glucose is broken down into pyruvate..."
+              ></textarea>
+            </div>
+
+            <div class="input-box input-box-2">
+              <div class="box-texts-n-img">
+                <div class="input-img-cont-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-text"
+                    data-fg-ed2d11="2.7:2.6155:/components/GenerateQuestionsPage.tsx:39:15:1426:48:e:FileText::::::B1i5"
+                  >
+                    <path
+                      d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+                    ></path>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    <path d="M10 9H8"></path>
+                    <path d="M16 13H8"></path>
+                    <path d="M16 17H8"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h2>Additional Study Material</h2>
+                  <p>Optional: Add textbook excerpts or extra notes</p>
+                </div>
+              </div>
+              <textarea
+                name=""
+                id=""
+                placeholder="Paste any additional study materials here (optional)..."
+              ></textarea>
+            </div>
+
+            <div class="input-box input-box-3">
+              <div class="box-texts-n-img">
+                <div class="input-img-cont-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-settings w-5 h-5 text-purple-600"
+                    data-fg-ed2d33="2.7:2.6155:/components/GenerateQuestionsPage.tsx:79:15:3498:48:e:Settings::::::D4nh"
+                  >
+                    <path
+                      d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                    ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h2>Question Settings</h2>
+                  <p>Customize your exam questions</p>
+                </div>
+              </div>
+              <div class="selection-type-sect">
+                <div>
+                  <label for="no-of-question">Number of Questions </label>
+                  <select name="no-of-question" id="no-of-question">
+                    <option value="">3 questions</option>
+                    <option value="">5 questions</option>
+                    <option value="">10 questions</option>
+                    <option value="">15 questions</option>
+                    <option value="">20 questions</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="no-of-question">Question Format</label>
+                  <select name="no-of-question" id="no-of-question">
+                    <option value="">Multiple Choice (MCQ)</option>
+                    <option value="">Easy Questions</option>
+                    <option value="">Short Answers</option>
+                    <option value="">Mixed Format</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="de-activate">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-sparkles"
+              data-fg-ctt657="1.65:2.3287:/components/LandingPage.tsx:102:15:4868:48:e:Sparkles::::::DD2N"
+            >
+              <path
+                d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+              ></path>
+              <path d="M20 3v4"></path>
+              <path d="M22 5h-4"></path>
+              <path d="M4 17v2"></path>
+              <path d="M5 18H3"></path>
+            </svg>
+            Generate Questions with AI
+          </button>
+          <span class="last-text"
+            >Please enter a lecture transcript to generate questions</span
+          >
+        </div>
+      </main>
+    </div>
+
+    <div id="upload">
+      <main>
+        <div class="content-container">
+          <h1>Upload Lecture Audio</h1>
+          <p>
+            Upload your lecture recording and our AI will transcribe and
+            generate exam questions automatically.
+          </p>
+
+          <div class="upload-drop-zone">
+            <div class="upload-zone-content">
+              <div class="upload-icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-download"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </div>
+              <h3>Drop your audio file here</h3>
+              <p>or click to browse from your computer</p>
+              <button class="upload-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-mic"
+                >
+                  <path
+                    d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"
+                  ></path>
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+                  <line x1="12" y1="19" x2="12" y2="22"></line>
+                </svg>
+                Select Audio File
+              </button>
+              <p class="supported-formats">
+                Supported formats: MP3, WAV, M4A, OGG (Max 500MB)
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="selected-file-info"
+            id="selectedFileInfo"
+            style="display: none"
+          >
+            <div class="file-details">
+              <div class="file-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-music"
+                >
+                  <path d="M9 18V5l12-2v13"></path>
+                  <circle cx="6" cy="18" r="3"></circle>
+                  <circle cx="18" cy="16" r="3"></circle>
+                </svg>
+              </div>
+              <div class="file-content">
+                <h3 id="fileName">Audio File</h3>
+                <div class="file-meta">
+                  <span class="file-size" id="fileSize">0 MB</span>
+                  <span class="file-duration" id="fileDuration"
+                    >Duration: --:--</span
+                  >
+                </div>
+              </div>
+              <button class="file-remove-btn" id="fileRemoveBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-x"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="workflow-cards">
+            <div class="workflow-card">
+              <div class="workflow-card-icon upload-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-download"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+              </div>
+              <h3>Upload Audio</h3>
+              <p>Drag and drop or select your lecture recording file</p>
+            </div>
+
+            <div class="workflow-card">
+              <div class="workflow-card-icon transcribe-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings"
+                >
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path
+                    d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"
+                  ></path>
+                </svg>
+              </div>
+              <h3>AI Transcription</h3>
+              <p>Advanced speech recognition converts audio to accurate text</p>
+            </div>
+
+            <div class="workflow-card">
+              <div class="workflow-card-icon generate-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-circle-check"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="16 12 12 8 8 12"></polyline>
+                </svg>
+              </div>
+              <h3>Generate Questions</h3>
+              <p>Get exam-ready questions based on the lecture content</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="about">
+      <main>
+        <div class="about-container">
+          <h1>How ExamSense AI Works</h1>
+          <p>
+            Transform your lecture materials into comprehensive exam questions
+            in three simple steps
+          </p>
+
+          <div class="steps-section">
+            <div class="step-card step-1">
+              <h2>Step 1</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-download"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </div>
+            <div class="step-description step-desc-1">
+              <h3>Upload Lecture Audio or Transcript</h3>
+              <p>
+                Start by uploading your lecture recording in MP3, WAV, or any
+                common audio format. Alternatively, paste your existing lecture
+                transcript or study notes directly into the text field.
+              </p>
+              <p class="supported-text">
+                <strong>Supported:</strong> Audio files up to 500MB, text
+                transcripts, lecture notes, textbook excerpts, and study guides
+              </p>
+            </div>
+
+            <div class="step-card step-2">
+              <h2>Step 2</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-settings"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M12 1v6m0 6v6M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24M1 12h6m6 0h6M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"
+                ></path>
+              </svg>
+            </div>
+            <div class="step-description step-desc-2">
+              <h3>AI Transcribes & Understands Content</h3>
+              <p>
+                Our advanced AI uses natural language processing to transcribe
+                audio files with high accuracy, then analyzes the content to
+                identify key concepts, important details, and potential exam
+                topics.
+              </p>
+              <p class="supported-text">
+                <strong>AI Features:</strong> Automatic transcription, context
+                understanding, topic identification, difficulty assessment, and
+                relevance scoring
+              </p>
+            </div>
+
+            <div class="step-card step-3">
+              <h2>Step 3</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-sparkles"
+              >
+                <path
+                  d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                ></path>
+                <path d="M20 3v4"></path>
+                <path d="M22 5h-4"></path>
+                <path d="M4 17v2"></path>
+                <path d="M5 18H3"></path>
+              </svg>
+            </div>
+            <div class="step-description step-desc-3">
+              <h3>Exam Questions Are Generated</h3>
+              <p>
+                ExamSense AI generates comprehensive exam questions in your
+                preferred format: multiple choice, essay questions, or short
+                answers. Each question comes with a detailed answer explanation
+                to help you study effectively.
+              </p>
+              <p class="supported-text">
+                <strong>Output Options:</strong> Multiple choice questions
+                (MCQ), essay questions, short answer questions, mixed format,
+                exportable as PDF
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits-section">
+            <h2>Why Students Love ExamSense AI</h2>
+            <div class="benefits-grid">
+              <div class="benefit-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-clock"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <h3>Save Study Time</h3>
+                <p>
+                  Generate practice questions in seconds instead of spending
+                  hours creating them manually
+                </p>
+              </div>
+              <div class="benefit-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-target"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <h3>Better Exam Preparation</h3>
+                <p>
+                  Practice with AI-generated questions that mirror actual exam
+                  formats and difficulty
+                </p>
+              </div>
+              <div class="benefit-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-layers"
+                >
+                  <polygon
+                    points="12 2 20 6 20 14 12 18 4 14 4 6 12 2"
+                  ></polygon>
+                  <polyline points="12 18 12 25"></polyline>
+                  <polyline points="8 14 8 21"></polyline>
+                  <polyline points="16 14 16 21"></polyline>
+                </svg>
+                <h3>Comprehensive Coverage</h3>
+                <p>
+                  AI ensures all key topics from your lectures are covered in
+                  the generated questions
+                </p>
+              </div>
+              <div class="benefit-card">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-lightbulb"
+                >
+                  <path
+                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"
+                  ></path>
+                  <path d="M9 18h6"></path>
+                  <path d="M10 22h4"></path>
+                </svg>
+                <h3>Learn More Effectively</h3>
+                <p>
+                  Active recall through question practice is proven to improve
+                  long-term retention
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <h2>Ready to Transform Your Study Routine?</h2>
+            <p>
+              Join thousands of students who are studying smarter with
+              AI-generated exam questions
+            </p>
+            <div class="cta-buttons">
+              <button class="cta-btn-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-sparkles"
+                >
+                  <path
+                    d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+                  ></path>
+                  <path d="M20 3v4"></path>
+                  <path d="M22 5h-4"></path>
+                  <path d="M4 17v2"></path>
+                  <path d="M5 18H3"></path>
+                </svg>
+                Start Generating Questions
+              </button>
+              <button class="cta-btn-secondary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-download"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Upload Lecture Audio
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

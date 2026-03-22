@@ -1,0 +1,40 @@
+package handlers
+
+
+import (
+	"context"
+	"encoding/json"
+	"net/http"
+	"strconv"
+	"exam-sense-backend/models"
+	"exam-sense-backend/services"
+)
+
+func GenerateExam(w http.ResponseWriter, r *http.Request) {
+	var req models.ExamRequest
+	json.NewDecoder(r.Body).Decode(&req)
+
+	prompt := `
+You are an exam-focused AI.
+Based ONLY on the lecture content and study material below,
+generate ` + strconv.Itoa(req.QuestionCount) + ` ` + req.QuestionFormat + ` questions
+that are most likely to appear in an exam.
+
+LECTURE:
+` + req.LectureTranscript + `
+
+STUDY MATERIAL:
+` + req.StudyMaterial + `
+`
+
+
+	result, err := services.GenerateExamQuestions(context.Background(), prompt)
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	}
+
+	json.NewEncoder(w).Encode(models.ExamResponse{
+		Questions: result,
+	})
+}
