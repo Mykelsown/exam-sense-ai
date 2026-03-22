@@ -581,21 +581,19 @@ article p,
   width: 50px;
   height: 50px;
   stroke-width: 1.5;
+  align-self: center;
 }
 
 .step-1 {
   background-color: #4f39f6;
-  align-self: flex-start;
 }
 
 .step-2 {
   background-color: #00bba7;
-  align-self: center;
 }
 
 .step-3 {
   background-color: #9810fa;
-  align-self: flex-end;
 }
 
 .step-description {
@@ -627,15 +625,6 @@ article p,
 .supported-text {
   color: #555;
   font-size: 0.9rem !important;
-}
-
-.step-desc-1,
-.step-desc-3 {
-  margin-left: 320px;
-}
-
-.step-desc-2 {
-  margin-right: 320px;
 }
 
 .benefits-section {
